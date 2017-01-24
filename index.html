@@ -5,21 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Alex Radulescu - Front-end developer</title>
-	<!-- We use by default the OpenGraph meta tags for easy sharing of links over social media platforms. -->
 	<meta property="og:title" content="Alex Radulescu">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://appstract.dk/">
-	<!-- Including mobile devices favicon and app icon for iOS, Android and Windows. One quick tool is http://www.favicon-generator.org/-->
+	<meta property="og:url" content="http://alex-radulescu.com/">
 
-	<link rel="icon" type="image/png" href="/favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500,700|Julius+Sans+One|Roboto:300,400,500" rel="stylesheet">	<link href="css/global.css" type="text/css" rel="stylesheet">
-	<link href="src/css/base.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600" rel="stylesheet">
+	<link href="./dist/css/style-1.3.css" type="text/css" rel="stylesheet">
 
-	
-	<!-- 
-		Fallback for IE 9 to recognise the HTML5 elements.
-		Each of these elements must have { display:block; } declared also in the css 
-	-->
 	<!--[if lte IE 9]>
 	<script type="text/javascript">
 		document.createElement('header');
@@ -35,255 +27,660 @@
 	</script>
 	<![endif]-->
 </head>
-<body>
-	<main class="main-container">
-		<header class="header">
-			<div class="hexagon logo-image">
-				<div class="hexagon-in1">
-					<div class="hexagon-in2"></div>
+<body class="is-loading">
+	<section class="loader-container">
+		<div class="loader"></div>
+	</section>
+	<header class="header">
+			<a class="logo" href="#intro">
+				<div class="hexagon logo-image">
+					<div class="hexagon-in1">
+						<div class="hexagon-in2"></div>
+					</div>
 				</div>
-			</div>
-			<h1 class="logo">Alex Radulescu</h1>
+			<h1 class="logo-text">Alex Radulescu</h1>
+			</a>
+			<section class="main-navigation">
+				<nav class="main-navigation-list">
+					<a class="main-navigation-link" href="#work">Work experience</a>
+					<a class="main-navigation-link" href="#skills">Skills</a>
+					<a class="main-navigation-link" href="#projects">Previous projects</a>
+					<a class="main-navigation-link" href="#education">Education</a>
+					<a class="main-navigation-link" href="#volunteering">Volunteering</a>
+					<a class="main-navigation-link" href="#goals">Goals and Values</a>
+					<a class="main-navigation-link" href="#about">About myself</a>
+					<a class="main-navigation-link" href="#contact">Contact</a>	
+				</nav>
+			</section>
 			<button type="button" class="menu-toggle">
 				<span class="menu-line"></span>
 				<span class="menu-line"></span>
 				<span class="menu-line"></span>
 			</button>
 		</header>
-		<section class="main-navigation">
-			<nav class="main-navigation-list">
-				<a class="main-navigation-link" href="#work">Work experience</a>
-				<a class="main-navigation-link" href="#skills">Skills</a>
-				<a class="main-navigation-link" href="#projects">Previous projects</a>
-				<a class="main-navigation-link" href="#education">Education and Volunteering</a>
-				<a class="main-navigation-link" href="#goals">Goals and Values</a>
-				<a class="main-navigation-link" href="#about">About myself</a>
-				<a class="main-navigation-link" href="#contact">Contact</a>
-			</nav>
-		</section>
-		<section class="content-section work-section" id="work">
-			<h2 class="section-title">Work experience</h2>
-			<ul class="bullet-step-list">
-				<li class="bullet-step-item">
-					<h3 class="bullet-step-title">Appstract Consulting</h3>
-					<p class="bullet-step-details">Front-end developer and architect, Aug 2015 - Present, Copenhagen</p>
-					<p class="bullet-step-text">
-						This position implies a number of related tasks to different projects: front-end architecture, HTML, CSS, Javascript, WCAG accessibility development and testing, .net Razor, defining acceptance criteria and test scenarios for user acceptance tests, testing and bug-fixing solutions.<br/>
-						The focus is on core technologies, developing lean, efficient solutions.<br/>
-						One of the mantras is to offer pixel-perfect, optimised and low-foot-print solutions targeting directly the customer needs without bloating the solutions.
-					</p>
-					<span class="bullet-step-dot"></span>
-				</li>
-				<li class="bullet-step-item">
-					<h3 class="bullet-step-title">Copenhagen Records</h3>
-					<p class="bullet-step-details">Internship, Feb 2013 - May 2013, Copenhagen</p>
-					<p class="bullet-step-text">
-						I worked at Copenhagen Records as part of my internship. I helped design the (possible) interface for the mobile and tablet for the future Musik.dk.<br/> 
-						It was a very challenging experience, having learned many new things in a great environment. I would do it all over again just the same, maybe even more.	
-					</p>
-					<span class="bullet-step-dot"></span>
-				</li>
-			</ul>
-		</section>
-
-		<section class="content-section skills-section" id="skills">
-			<h2 class="section-title">Skills</h2>
-			<ul class="tile-list">
-				<li class="tile">
-					<img class="tile-image" src="files/html5.png" role="presentation" alt=""/>
-					<h4 class="tile-title">HTML5</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/css3.png" role="presentation" alt=""/>
-					<h4 class="tile-title">CSS3</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/js.png" role="presentation" alt=""/>
-					<h4 class="tile-title">JavaScript</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/razor.png" role="presentation" alt=""/>
-					<h4 class="tile-title">Razor(Asp.net)</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/responsive.png" role="presentation" alt=""/>
-					<h4 class="tile-title">Responsive design</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/umbraco.png" role="presentation" alt=""/>
-					<h4 class="tile-title">Umbraco CMS</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/email.png" role="presentation" alt=""/>
-					<h4 class="tile-title">HTML email templates</h4>
-				</li>
-				<li class="tile">
-					<!--<img class="tile-image" src="files/html5.png" role="presentation" alt=""/>-->
-					<h4 class="tile-title">WCAG</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/ie8.png" role="presentation" alt=""/>
-					<h4 class="tile-title">Browser compatibility (IE8+)</h4>
-				</li>
-				<li class="tile">
-					<!--<img class="tile-image" src="files/html5.png" role="presentation" alt=""/>-->
-					<h4 class="tile-title">jQuery</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/git.png" role="presentation" alt=""/>
-					<h4 class="tile-title">Git</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/gulp.png" role="presentation" alt=""/>
-					<h4 class="tile-title">Gulp</h4>
-				</li>
-				<li class="tile">
-					<!--<img class="tile-image" src="files/html5.png" role="presentation" alt=""/>-->
-					<h4 class="tile-title">PHP</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/mysql.png" role="presentation" alt=""/>
-					<h4 class="tile-title">MySQL</h4>
-				</li>
-				<li class="tile">
-					<img class="tile-image" src="files/ps.png" role="presentation" alt=""/>
-					<h4 class="tile-title">Photoshop</h4>
-				</li>
-				<li class="tile">
-					<!--<img class="tile-image" src="files/html5.png" role="presentation" alt=""/>-->
-					<h4 class="tile-title">Product development</h4>
-				</li>
-				<li class="tile">
-					<!--<img class="tile-image" src="files/html5.png" role="presentation" alt=""/>-->
-					<h4 class="tile-title">Project management</h4>
-				</li>
-			</ul>
+	<main class="main-container">
+		<section class="section intro-section is-active" id="intro">
+			<div class="section-content">
+				<p class="intro-text">Hi, I'm Alex</p>
+				<p class="intro-text">If your company is looking for a front-end developer who:</p>
+				<ul class="intro-list">
+					<li class="intro-list-item">Can transform designs into pixel-perfect products</li>
+					<li class="intro-list-item">Focuses on fast, efficient and reusable code</li>
+					<li class="intro-list-item">Creates solutions that work across browsers, from IE9 upwards</li>
+					<li class="intro-list-item">Builds responsive projects working on all mobile platforms</li>
+					<li class="intro-list-item">Can collaborate and advise designers and clients regarding UI/UX</li>
+					<li class="intro-list-item">Can write object oriented javascript</li>
+					<li class="intro-list-item">Can work without the use of frameworks, but can take full advantage of them if desired or needed</li>
+					<li class="intro-list-item mobile-hidden">Is responsible and looks not only at coding but at the project as a whole</li>
+					<li class="intro-list-item mobile-hidden">Always delivers</li>
+				</ul>
+				<p class="intro-text">You can reach me by email at <a href="mailto:radulescu.alexandru.doru@gmail.com">radulescu.alexandru.doru@gmail.com</a> or call me at <a href="tel:004528567880">[+45] 2856 7880</a></p>
+			</div>
 		</section>
 		
-		<section class="content-section projects-section" id="projects">
-			<h2 class="section-title">Projects</h2>
-			<ul class="column-grid clearfix">
-				<li class="box-half card expanding-card">
-					<img class="card-image" role="presentation" src="files/hotel-larisa.png"/>
-					<h3 class="card-title">Hotel Larisa</h3>
-					<div class="card-content">
-						<p class="card-details">Dec 2016</p>
-						<p class="card-text">A pro-bono website done for a friend of mine, Larisa, who is starting her career in the business world. The website is designed and developed from scratch by me. As such, the source code is available on GitHub</p>
-						<a href="http://hotel-larisa.com/" target="_blank" class="button">Visit the solution</a>
-						<a href="larisa-hotel.com" target="_blank" class="button">See the code</a>
-					</div>
-				</li>				
-				<li class="box-half card expanding-card">
-					<img class="card-image" role="presentation" src="files/nkf.png"/>
-					<h3 class="card-title">Nordisk Kulturfond</h3>
-					<div class="card-content">
-						<p class="card-details">Initial website, service and features upgrades</p>
-						<p class="card-text">Part of the development team who created the current version of Nordisk Kulturfond. My work includes HTML, CSS, Javascript, project management, testing, deployment, consultations and work with the client. All code belongs to appstract consulting. As such it is not available.</p>
-						<a href="https://www.nordiskkulturfond.org/en/" target="_blank" class="button">Visit the solution</a>
-					</div>
-				</li>
-				<li class="box-half card expanding-card">
-					<img class="card-image" role="presentation" src="files/beboerbladet.png"/>
-					<h3 class="card-title">BL Beboerbladet</h3>
-					<div class="card-content">
-						<p class="card-details">Website development</p>
-						<p class="card-text">Part of the development team who created the current version of Nordisk Kulturfond. My work includes HTML, CSS, Javascript, project management, testing, deployment, consultations and work with the client. All code belongs to appstract consulting. As such it is not available.</p>
-						<a href="http://beboerbladet.dk/" target="_blank" class="button">Visit the solution</a>
-					</div>
-				</li>
-				<li class="box-half card expanding-card">
-					<img class="card-image" role="presentation" src="files/lbf.png"/>
-					<h3 class="card-title">LBF.dk</h3>
-					<div class="card-content">
-						<p class="card-details">Service and features upgrades</p>
-						<!--<p class="card-text">Lorem ipsul dolor sit med.</p>-->
-						<a href="https://lbf.dk/" target="_blank" class="button">Visit the solution</a>
-					</div>
-				</li>
-				<li class="box-half card expanding-card">
-					<img class="card-image" role="presentation" src="files/stelton.png"/>
-					<h3 class="card-title">Stelton e-shop</h3>
-					<div class="card-content">
-						<p class="card-details">Development and service upgrades</p>
-						<!--<p class="card-text">Lorem ipsul dolor sit med.</p>-->
-						<a href="https://www.stelton.com/en/" target="_blank" class="button">Visit the solution</a>
-					</div>
-				</li>
-				<li class="box-half card expanding-card">
-					<img class="card-image" role="presentation" src="files/kf.png"/>
-					<h3 class="card-title">KF Forsikring</h3>
-					<div class="card-content">
-						<p class="card-details">Service and features upgrades</p>
-						<!--<p class="card-text">Lorem ipsul dolor sit med.</p>-->
-						<a href="https://www.kfforsikring.dk/privat/" target="_blank" class="button">Visit the solution</a>
-					</div>
-				</li>
-				<li class="box-half card expanding-card">
-					<img class="card-image" role="presentation" src="files/appstract.png"/>
-					<h3 class="card-title">appstract.dk</h3>
-					<div class="card-content">
-						<p class="card-details">Development and solution upgrades</p>
-						<!--<p class="card-text">Lorem ipsul dolor sit med.</p>-->
-						<a href="https://appstract.dk" target="_blank" class="button">Visit the solution</a>
-					</div>
-				</li>
-			</ul>
-		</section>
-		
-		<section class="content-section education-section" id="education">
-			<h2 class="section-title">Education</h2>
-			<ul class="bullet-step-list">
-				<li class="bullet-step-item">
-					<h3 class="bullet-step-title">Aspire Academy</h3>
-					<p class="bullet-step-details">Sep 2015 - Present, Copenhagen</p>
-					<p class="bullet-step-text">Lorem ipsul dolor sit med.</p>
-					<span class="bullet-step-dot"></span>
-				</li>
-				<li class="bullet-step-item">
-					<h3 class="bullet-step-title">IT University of Copenhagen</h3>
-					<p class="bullet-step-details">Sep 2015 - Present, Copenhagen</p>
-					<p class="bullet-step-text">Lorem ipsul dolor sit med.</p>
-					<span class="bullet-step-dot"></span>
-				</li>
-				<li class="bullet-step-item">
-					<h3 class="bullet-step-title">Copenhagen School of Design and Technology</h3>
-					<p class="bullet-step-details">Sep 2015 - Present, Copenhagen</p>
-					<p class="bullet-step-text">Lorem ipsul dolor sit med.</p>
-					<span class="bullet-step-dot"></span>
-				</li>
-			</ul>
-		</section>
-
-		<section class="content-section about-me-section" id="about">
-			<h2 class="section-title">About myself</h2>
-			<div class="rich-text">
-				<p>Hi. Welcome to the last part, myself.</p>
-
-				<p>I'll be honest, this is the hardest part. I am not very good at describing myself. It always felt a bit strange but here it goes ;-).</p>
-
-				<p>I am a simple guy. I am a geek. I love to play with a new gadget, a smartphone, a new tech or a new framework.</p>
-
-				<p>I love experiences, from taking a stroll in a park with my awesome wife, to hanging out or playing games with our friends. And travelling all around the world.</p>
-
-				<p>I love my wife! A lot :-D</p>
-
-				<p>I grew up in a normal family, in Romania, and I moved to Denmark for university. I learned that we are responsible for our own actions and the world around us. And that is cool because that means we have the power to make it awesome!</p>
-
-				<p>I am an eternal optimist, looking towards the future, but trying to figure out how can I give a helping hand to make a better tomorrow.</p>
+		<section class="section work-section" id="work">
+			<div class="section-content">
+				<h2 class="section-title">Work experience</h2>
+				<ul class="bullet-step-list">
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Appstract Consulting</h3>
+						<p class="bullet-step-details">Front-end developer and architect, Aug 2015 - Present, Copenhagen</p>
+						<p class="bullet-step-text">
+							My work at Appstract implies different tasks, from analysing and consulting clients and designer on suggested designs, HTML, CSS, Javascript, WCAG accessibility development and testing, .net Razor, defining acceptance criteria and test scenarios for user acceptance tests,  to doing project estimations, project management and teaching the newly employed front-end developers our standards and best practices.<br/>
+							The focus is on core technologies, developing lean, efficient solutions, building in-house solutions rather than using external, very generic frameworks, unless requested.<br/>
+							One of the mantras at Appstract is to offer pixel-perfect, optimised and low footprint solutions targeting directly the customer needs without bloating the solutions.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Barth LMS</h3>
+						<p class="bullet-step-details">Co-founder, Jun 2015 - Jan 2017, Copenhagen</p>
+						<p class="bullet-step-text">
+							In most cases work included front-end development, design, project management and business development.	
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Copenhagen Records</h3>
+						<p class="bullet-step-details">Internship, Feb 2013 - May 2013, Copenhagen</p>
+						<p class="bullet-step-text">
+							I worked at Copenhagen Records as part of my internship. I helped design mobile and tablet interface for Musik.dk.<br/> 
+							It was a very challenging experience, as I was at the beginning of my front-end journey. But thanks to the pressure and responsabilities I learned many things which later brought me to Appstract.	
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+				</ul>
 			</div>
 		</section>
 
-		
-		<section class="content-section projects-section" id="contact">
-			<h2 class="section-title">Contact</h2>
-			<p class="section-text">
-				For any inquires, job offers or simply to say Hi, you can reach me either by email, phone number of by my LinkedIn account.
-			</p>
-			<a class="section-text is-emphasised" href="tel:004528567880">tel: [+45] 2856 7880</a>
-			<a class="section-text is-emphasised" href="mailto:radulescu.alexandru.doru@gmail.com">email: radulescu.alexandru.doru@gmail.com</a>
-			<a class="button" href="#" target="_blank">LinkedIn</a>
+		<section class="section skills-section" id="skills">
+			<div class="section-content">
+				<h2 class="section-title">Skills</h2>
+				<div class="column-grid clearfix">
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/html5.png" alt="" role="presentation">
+							<h3 class="accordion-heading">HTML</h3>
+							<p class="accordion-subheading">Proficient</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<p>I am focused on writing code</p>
+									<ul>
+										<li>using the best, semantic HTML code</li>
+										<li>always W3C valid</li>
+										<li>as short and efficient as possible</li>
+										<li>always cross-browser compatible</li>
+										<li>component-based</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/css3.png" alt="" role="presentation">
+							<h3 class="accordion-heading">CSS3</h3>
+							<p class="accordion-subheading">Proficient</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Mostly wrote CSS from scratch, but I have experience with Bootstrap and Foundation (for rapid prototyping)</li>
+										<li>Focused on fast and effective code</li>
+										<li>Cross-browser or graceful degradation for older browsers</li>
+										<li>Component-based code</li>
+										<li>A big fan of vanilla CSS</li>
+										<li>I have worked on multilpe projects with SASS and LESS</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/js.png" alt="" role="presentation">
+							<h3 class="accordion-heading">Javascript</h3>
+							<p class="accordion-subheading">Advanced</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Most scripts used on my projects were written by myself, including form validation, tabbing, accordions and more</li>
+										<li>Object oriented Javascript</li>
+										<li>Working with basic ES6 transpiled back to ES5 for older browsers</li>
+										<li>Cross-browser functionality and graceful degradation for older browsers</li>
+										<li>Component-based code</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/razor.png" alt="" role="presentation">
+							<h3 class="accordion-heading">Razor (Asp.Net)</h3>
+							<p class="accordion-subheading">Advanced</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Used Razor to integrate front-end code into MVC framework in almost all projects</li>
+										<li>Basic experience in back-end development for fixes and extending features</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/responsive.png" alt="" role="presentation">
+							<h3 class="accordion-heading">Responsive design</h3>
+							<p class="accordion-subheading">Proficient</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>All projects I have worked on are responsive</li>
+										<li>Mostly mobile first, but also desktop first if needed, depending on the client's or project's needs</li>
+										<li>Currently I am working with basic progressive web-apps</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/umbraco.png" alt="" role="presentation">
+							<h3 class="accordion-heading">Umbraco CMS</h3>
+							<p class="accordion-subheading">Mid-level</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Experience as editor in Umbraco based website</li>
+										<li>Configuring and structuring Umbraco backoffice</li>
+										<li>All projects done at Appstract Consulting used Umbraco as foundation</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/email.png" alt="" role="presentation">
+							<h3 class="accordion-heading">HTML email templates</h3>
+							<p class="accordion-subheading">Mid-level</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Cross-email compatible HTML and CSS code for email templates</li>
+										<li>Coded templates from base for iOS mail, Gmail, Outlook, Yahoo.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/wcag.png" alt="" role="presentation">
+							<h3 class="accordion-heading">WCAG</h3>
+							<p class="accordion-subheading">Advanced</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>I was the main person responsible for WCAG compliance on projects at Appstract Consulting</li>
+										<li>I am using automated test suites such as Wave and Axe for testing and diagnosis</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/ie8.png" alt="" role="presentation">
+							<h3 class="accordion-heading">Browser compatibility (IE9+)</h3>
+							<p class="accordion-subheading">Proficient</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>All projects I worked with are compatible starting from Internet Explorer 9 (10, 11), MS Edge, Firefox, Chrome, iOS, Android</li>
+										<li>Experienced with quirks of different browsers</li>
+										<li>In some cases developed for IE 8 compatibility and graceful degradation and some more exotic devices (Smart TVs)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/jquery.png" alt="" role="presentation">
+							<h3 class="accordion-heading">jQuery</h3>
+							<p class="accordion-subheading">Generic usage - advanced</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Used on most projects for compatibility and ease of development </li>
+										<li>Looking into renouncing it where possible and using vanilla Javascript (if the requirements allow it)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/git.png" alt="" role="presentation">
+							<h3 class="accordion-heading">Git</h3>
+							<p class="accordion-subheading">Mid-level</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Everyday usage for both personal projects (GitHub) and professional ones (GitLab, Mercurial)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/gulp.png" alt="" role="presentation">
+							<h3 class="accordion-heading">Gulp</h3>
+							<p class="accordion-subheading">Mid-level</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Everyday usage for the past year on all projects</li>
+										<li>Basic usage for transpiling, compiling, auto-prefixing code and live injection of code into the solution</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/php.png" alt="" role="presentation">
+							<h3 class="accordion-heading">PHP</h3>
+							<p class="accordion-subheading">Beginner</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Basic knowledge in PHP from university projects.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/mysql.png" alt="" role="presentation">
+							<h3 class="accordion-heading">MySQL</h3>
+							<p class="accordion-subheading">Beginner</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Basic knowledge in MySQL from university projects.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/ps.png" alt="" role="presentation">
+							<h3 class="accordion-heading">Photoshop</h3>
+							<p class="accordion-subheading">Advanced (developer level)</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>I have used Photoshop on most professional projects</li>
+										<li>Experience focused around tools which help develope code and implement pixel-perfect solutions (measurements, fonts, extraction of resources)</li>
+										<li>Not experienced with artistic tasks (intense image editing)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion box-half">
+						<div class="accordion-header" tabindex="0">
+							<img class="accordion-image" src="files/pm.png" alt="" role="presentation">
+							<h3 class="accordion-heading">Project management</h3>
+							<p class="accordion-subheading">Beginner</span>
+						</div>
+						<div class="accordion-content">
+							<div class="accordion-content-inner">
+								<div class="editor-content">	
+									<ul>
+										<li>Experience gained from 4 projects which I have lead until now</li>
+										<li>Communicating and helping the customers understand what are their real needs and the benefits and limitation of different strategies</li>
+										<li>Transforming needs into practical requirements for the development team</li>
+										<li>Communicating with designers and clients to offer the best available solution or compromise to a set problem.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		
+		<section class="section projects-section" id="projects">
+			<div class="section-content">
+				<h2 class="section-title">Projects</h2>
+				<ul class="column-grid clearfix">
+					<div class="box-half">
+						<li class="card expanding-card">
+							<img class="card-image" role="presentation" src="files/hotel-larisa.png"/>
+							<h3 class="card-title">Hotel Larisa</h3>
+							<div class="card-content">
+								<p class="card-details">Concept, UI/UX, design, development, maintanance</p>
+								<p class="card-text">A little pro-bono website for a friend of mine, Larisa. She is starting her career in the business world. The website is designed and developed from scratch by me. As such, the source code is available on GitHub, and it is still under development.</p>
+								<a href="http://hotel-larisa.com/" target="_blank" class="button">Visit the solution</a>
+								<a href="https://github.com/alexandruradulescu/hotel-larisa" target="_blank" class="button">See the code</a>
+							</div>
+						</li>				
+						<li class="card expanding-card">
+							<img class="card-image" role="presentation" src="files/nkf.png"/>
+							<h3 class="card-title">Nordisk Kulturfond</h3>
+							<div class="card-content">
+								<p class="card-details">Initial website, service and features upgrades</p>
+								<p class="card-text">Part of the development team who created the current version of Nordisk Kulturfond. My work includes HTML, CSS, Javascript, project management, testing, deployment, consultations and work with the client. All code belongs to Appstract Consulting. As such, it is not available.</p>
+								<a href="https://www.nordiskkulturfond.org/en/" target="_blank" class="button">Visit the solution</a>
+							</div>
+						</li>
+						<li class="card expanding-card">
+							<img class="card-image" role="presentation" src="files/beboerbladet.png"/>
+							<h3 class="card-title">BL Beboerbladet</h3>
+							<div class="card-content">
+								<p class="card-details">Website development</p>
+								<p class="card-text">My tasks included html, css and javascript development, deployment, testing, bugfixing and WCAG accessibility. During this project I learned valuable lessons about accessibility coding.</p>
+								<a href="http://beboerbladet.dk/" target="_blank" class="button">Visit the solution</a>
+							</div>
+						</li>
+						<li class="card expanding-card">
+							<img class="card-image" role="presentation" src="files/appstract.png"/>
+							<h3 class="card-title">appstract.dk</h3>
+							<div class="card-content">
+								<p class="card-details">Development and solution upgrades</p>
+								<p class="card-text">This is the presentation website of Appstract Consulting. My tasks included HTML, CSS, Javascript, testing and deployment.</p>
+								<a href="https://appstract.dk" target="_blank" class="button">Visit the solution</a>
+							</div>
+						</li>
+					</div>
+					<div class="box-half">
+						<li class="card expanding-card">
+							<img class="card-image" role="presentation" src="files/stelton.png"/>
+							<h3 class="card-title">Stelton e-shop</h3>
+							<div class="card-content">
+								<p class="card-details">Development and service upgrades</p>
+								<p class="card-text">I was part of the team that implemented the new Stelton e-shop. My tasks included breakdown of the design into individual components, time estimates, planning of the weekly sprints, HTML, CSS, Javascript, testing. In this project I learned a lot about forms and validation, scripting and good practices for user experience regarding web-shops.</p>
+								<a href="https://www.stelton.com/en/" target="_blank" class="button">Visit the solution</a>
+							</div>
+						</li>
+						<li class="card expanding-card">
+							<img class="card-image" role="presentation" src="files/kf.png"/>
+							<h3 class="card-title">KF Forsikring</h3>
+							<div class="card-content">
+								<p class="card-details">Service and features upgrades</p>
+								<p class="card-text">I was involved with multiple projects for this client. Most of my tasks included fixing bugs, developing updates to the system, testing and deployment of the projects. From these projects I learned a lot about integrating and fixing code written in different styles and frameworks.</p>
+								<a href="https://www.kfforsikring.dk/privat/" target="_blank" class="button">Visit the solution</a>
+							</div>
+						</li>
+						<li class="card expanding-card">
+							<img class="card-image" role="presentation" src="files/lbf.png"/>
+							<h3 class="card-title">LBF.dk</h3>
+							<div class="card-content">
+								<p class="card-details">Development and solution upgrades</p>
+								<p class="card-text">LBF includes a number of different project, including both presentation websites and web applications both internal and external. My tasks included front-end development, estimations, defining requirements and acceptance criteria, project management, testing and deployment.</p>
+								<a href="https://lbf.dk" target="_blank" class="button">Visit the solution</a>
+							</div>
+						</li>
+					</div>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="section education-section" id="education">
+			<div class="section-content">
+				<h2 class="section-title">Education</h2>
+				<ul class="bullet-step-list">
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Aspire Academy</h3>
+						<p class="bullet-step-details">Jul 2016, Poiana Brasov, Romania</p>
+						<p class="bullet-step-text">
+							Aspire Academy is a leadership one week summercschool, focused on developing the next generation of leaders around the world, with a base in Romania.<br/>
+							In practical terms, each summer, ~70 of the best applicants (over 700 last summer) are chosen to take part in a week of workshops and trainings with teachers from some of the best universities (including Harvard and Stanford) or leaders in their fields (business, politics and NGOs).
+							After this, all students become part of the Aspire Alumni Club, a society for all Aspire members, connecting us to better opportunities to help around the world.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">IT University of Copenhagen(ITU)</h3>
+						<p class="bullet-step-details">Aug 2015 - Present, Copenhagen, Denmark</p>
+						<p class="bullet-step-text">
+							At ITU I am studying M.SC. in Digital Innovation Management.<br>
+							My focus in the programme is innovation and change management, in order to help me better navigate the fast and interesting time coming ahead.<br/>
+							I am pursuing this masters programme out of curiosity and desire to learn also the more humanistic part of the world, while development remains my main professional focus.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Copenhagen School of Design and Technology(KEA)</h3>
+						<p class="bullet-step-details">Aug 2011 - Feb 2015, Copenhage, Denmark</p>
+						<p class="bullet-step-text">
+							At KEA I studied a combined programme of Multimedia Design and Communication and Web-development.<br/>
+							My focus has been on the programming side of the course, but the lessons learned with regards to basic design, UI/UX, project management were useful later on.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="section" id="volunteering">
+			<div class="section-content">
+				<h2 class="section-title">Volunteering</h2>
+				<ul class="bullet-step-list">
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Board member - Toastmasters Copenhagen</h3>
+						<p class="bullet-step-details">Feb 2014 - Aug 2016</p>
+						<p class="bullet-step-text">
+							Duties included organising meetings, membership overview and welcoming new members to our group.<br/>
+							Toastmasters was agreat opportunity to meet new amazing people and to develop my public speaking skills.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">“Upgrading the slums in Africa” competition - 1st place</h3>
+						<p class="bullet-step-details">Copenhagen School of Design and Technology, Apr 2014/p>
+						<p class="bullet-step-text">
+							Competition of ideas regarding solutions for raising the standards of living in poor suburban african areas.<br/>
+							Solution was a low-cost, urban agriculture education programme.<br/>
+							The prize was visiting Zimbabwe for a feasibility study and helping the NGO (PLAN) with an outside perspective regarding their projects and solutions.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Summer camp organising</h3>
+						<p class="bullet-step-details">Summers of 2011, 2012, 2014</p>
+						<p class="bullet-step-text">
+							Organising summer camps for high-school students at the Romanian seaside. Work included day to day functioning of the camp, creating activities for the students and supervising them.<br/>
+							I learned a lot about responsabilities during these camps and they are some of the best moments of my life.	
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Academic debating</h3>
+						<p class="bullet-step-details">AES(Social Education Association) Club, Sep 2009 - Sep 2014</p>
+						<p class="bullet-step-text">
+							I have both practiced debating myself, but also coached younger students and helped organise a number of competitions as member of AES Debating Club.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section goals-section" id="goals">
+			<div class="section-content">
+				<h2 class="section-title">My goals and values</h2>
+
+				<ul class="bullet-step-list">
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Continuous learning</h3>
+						<p class="bullet-step-text">
+							We live in a very fast changing world. In fact, 20 years ago, my job didn't exist. And it won't be the same in another 20.<br/>
+							As of the last 4 years, I have read on average a book each month, from business and psychology to development and technical ones.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">High quality work</h3>
+						<p class="bullet-step-text">
+							When I am taking on a project, work related or not, my end goal is not only to finish the project, but to make the recipient, client or friend happy.<br/>
+							Sometimes it is a small animation or a quick loading time. Othertimes it is a good conversation, trying to better understand the other person. Or helping them with a difficulty.<br/>
+							In the end, for me, projects are not things to finish and move on, but bridges to get to know and help other people.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">A better tomorrow</h3>
+						<p class="bullet-step-text">
+							I believe we are all responsible for the world we live in. And this gives us the power to make it better.<br/>
+							While we are not super-heroes and we can't save the world alone, we can improve it together.<br/>
+							In my case, I helped organise camps for highschool children and I taught public speaking.<br/>
+							In university I was part of different activism groups working towards a better, cleaner environment.<br/>
+							Today I am working on downsizing my negative footprint on the world, by having less material belongings and by giving up completly my old car.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Honesty and transparency</h3>
+						<p class="bullet-step-text">
+							I consider the two as foundation for healthy, positive relations with anyone around ourselves, family, friends and clients.<br/>
+							Giving creative, helpful criticism and being open has proved to be the solution in many possibly problematic situations.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Family</h3>
+						<p class="bullet-step-text">
+							Family for me is the cornerstone of personal values, of relations and of us as people. Within our families we form as persons, we take on values and we put them into practice.<br/>
+							The workplace, the colleagues, the clients, are in a way also part of the family. And they reflect just as much on ourselves.<br/>
+							As such, I try to be as helpful, as honest, as open with everyone as I would be with my family. To treat others as I want to be treated.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Customer experience</h3>
+						<p class="bullet-step-text">
+							When clients choose a company, I learned that they are not looking only for great developers, a great end project, but many times for partners.<br/>
+							If a product is great, even perfect, but the personal relation with the client was lacking, it rarely matters. On the other hand, even if there was issues during a project, but the dialogue was open, was great for the client, they could come back.<br/>
+							And just as anyone else, I love when I receive great service. So whenever I have the chance, I do my best to do the same.
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+					<li class="bullet-step-item">
+						<h3 class="bullet-step-title">Experiencing the world</h3>
+						<p class="bullet-step-text">
+							The world is an amazing place full of diversity. And with diversity comes a wide range of ideas, solutions, possibilities.<br/>
+							I love travelling, seeing new places, meeting new people, making a connection, learning the differences and enjoying them. Because from them some of the best ideas and solutions come to life.<br/>
+						</p>
+						<span class="bullet-step-dot"></span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section about-me-section" id="about">
+			<div class="section-content">
+				<h2 class="section-title">About myself</h2>
+				<div class="rich-text">
+					<p>Hi. Welcome to the last part, myself.</p>
+
+					<p>I'll be honest, this is the hardest part. I am not very good at describing myself. It always felt a bit strange but here it goes.</p>
+
+					<p>I am a simple guy. I am a geek. I love to play with a new gadget, a smartphone, a new tech or a new framework.</p>
+
+					<p>I love experiences, from taking a stroll in a park with my awesome wife, to hanging out or playing games with our friends and travelling all around the world.</p>
+
+					<p>I love my wife! A lot!</p>
+
+					<p>I grew up in a normal family, in Romania, and I moved to Denmark for university. I learned that we are responsible for our own actions and the world around us. And that is cool because that means we have the power to make it awesome!</p>
+
+					<p>I am an eternal optimist, looking towards the future, but trying to figure out how can I give a helping hand to make a better tomorrow.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section contact-section" id="contact">
+			<div class="section-content">
+				<h2 class="section-title">Contact</h2>
+				<p class="section-text">
+					For any inquires, job offers or simply to say Hi, you can reach me either by email, phone number or by my LinkedIn account.
+				</p>
+				<a class="section-text is-emphasised" href="tel:004528567880">tel: [+45] 2856 7880</a>
+				<a class="section-text is-emphasised" href="mailto:radulescu.alexandru.doru@gmail.com">email: radulescu.alexandru.doru@gmail.com</a>
+				<a class="button" href="https://www.linkedin.com/in/alex-radulescu" target="_blank">LinkedIn</a>
+				<a class="button" href="http://alex-radulescu.com/files/CV-Alex-Radulescu.pdf" target="_blank">Personal CV</a>
+			</div>
+		</section>
 	</main>
+
+	<p class="for-print">
+		The website is not currently optimised for print.<br/> 
+		Please download and print the abbreviated CV which can be found in the Contact section.<br/> 
+		Thank you.
+	</p>
+
+	<!--<section class="popup">
+		<div class="popup-background"></div>
+		<div class="popup-content"></div>
+		<button type="button" class="popup-close"></button>
+	</section>-->
+	<script src="./dist/scripts/all-1.3.js"></script>
 </body>
 </html>

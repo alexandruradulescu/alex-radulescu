@@ -1,7 +1,7 @@
 {
-  "name": "testing",
-  "version": "1.0.0",
-  "description": "",
+  "name": "alex-radulescu.com",
+  "version": "1.4.0",
+  "description": "Personal portfolio website",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -14,14 +14,16 @@
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.2",
+    "gulp-clean-css": "^2.3.2",
     "gulp-concat": "^2.6.0",
     "gulp-if": "^2.0.0",
     "gulp-jshint": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
     "jshint": "^2.9.1",
+    "precss": "^1.4.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"

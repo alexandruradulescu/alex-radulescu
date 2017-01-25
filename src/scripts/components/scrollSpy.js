@@ -30,7 +30,7 @@ class ScrollSpy extends as.View {
     }
 
     onScroll() {
-        const fromTop = this.el.scrollTop() + this.topBuffer;
+        const fromTop = window.pageYOffset + this.topBuffer;
         
         let currentScrollItem = this.sectionsList.map(function(i, element){
             if (element.offset().top < fromTop)
@@ -49,7 +49,7 @@ class ScrollSpy extends as.View {
                 this.lastId = "";
             }
         }
-        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
             this.lastId = "";
             this.menuItems.removeClass("is-active");
             this.lastSection.addClass("is-active");
